@@ -45,13 +45,13 @@
   main.home-page {
     background: 
       linear-gradient(to bottom, transparent 0%, transparent 60%, #030014 100%),
-      url("./BG.png") center top/auto no-repeat fixed,
+      url("/BG.png") center top/auto no-repeat fixed,
       #030014;
   }
 
   /* Background pour autres pages */
   main.detail-page {
-    background: url("./BG.png") center/cover no-repeat, #030014;
+    background: url("/BG.png") center/cover no-repeat, #030014;
   }
 
   header {
