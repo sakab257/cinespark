@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 import FavoriteButton from '../components/ui/FavoriteButton';
 import TrailerButton from '../components/ui/TrailerButton';
 
@@ -98,9 +99,9 @@ function MovieDetails() {
         {/* Movie Info */}
         <div className="lg:col-span-2 space-y-6">
           <div>
-            <div className="flex items-start justify-between mb-4">
-              <h1 className="text-4xl font-bold text-white">{movie.title}</h1>
-              <div className="flex items-center gap-3">
+            <div className="flex flex-col xs:flex-row xs:items-start xs:justify-between mb-4 gap-3">
+              <h1 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">{movie.title}</h1>
+              <div className="flex items-center gap-2 xs:gap-3 flex-shrink-0">
                 <TrailerButton movieId={movie.id} movieTitle={movie.title} />
                 <FavoriteButton movie={movie} />
               </div>
@@ -164,6 +165,8 @@ function MovieDetails() {
           )}
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 }

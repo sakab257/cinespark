@@ -75,9 +75,9 @@ function FiltersPanel({ onFiltersChange, isVisible, onToggle }) {
       {/* Toggle Button */}
       <button
         onClick={onToggle}
-        className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium transition-all duration-200 cursor-pointer hover:scale-105 shadow-lg shadow-blue-500/25 mb-6"
+        className="flex items-center gap-1 xs:gap-2 px-3 py-2 xs:px-4 xs:py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium text-sm xs:text-base transition-all duration-200 cursor-pointer hover:scale-105 shadow-lg shadow-blue-500/25 mb-6"
       >
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 xs:w-5 xs:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
         </svg>
         {isVisible ? 'Masquer les filtres' : 'Afficher les filtres'}

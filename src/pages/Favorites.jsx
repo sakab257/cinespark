@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useFavorites } from '../contexts/FavoritesContext';
 import MovieCard from '../components/MovieCard';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 function Favorites() {
   const { favorites } = useFavorites();
@@ -41,6 +42,8 @@ function Favorites() {
           ))}
         </div>
       )}
+      
+      <Footer />
     </div>
   );
 }

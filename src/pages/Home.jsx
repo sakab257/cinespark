@@ -4,6 +4,7 @@ import MovieCard from '../components/MovieCard'
 import MovieCardSkeleton from '../components/ui/MovieCardSkeleton'
 import MovieCategories from '../components/MovieCategories'
 import Navigation from '../components/Navigation'
+import Footer from '../components/Footer'
 import { useDebounce } from 'react-use'
 
 const API_BASE_URL = 'https://api.themoviedb.org/3'
@@ -75,7 +76,7 @@ function Home() {
       <Navigation />
       <header>
         <img src='./hero-img.png' />
-        <h1>Trouvez <span className='text-gradient'>Tous Les Films</span> Que Vous Aimez Sans Prise De Tête</h1>
+        <h1><span className='text-gradient'>Tous Les Films</span> Que Vous Aimez Sans <span className="text-gradient">Prise De Tête</span></h1>
         <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
       </header>
 
@@ -105,6 +106,8 @@ function Home() {
 
       {/* Show categories when not searching */}
       {!searchTerm && <MovieCategories />}
+      
+      <Footer />
     </div>
   )
 }

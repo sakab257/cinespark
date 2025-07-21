@@ -115,12 +115,12 @@ function MovieCategories() {
   return (
     <section className="movie-categories mt-16">
       {/* Category tabs */}
-      <div className="flex flex-wrap gap-3 mb-8">
+      <div className="flex flex-wrap gap-2 xs:gap-3 mb-8">
         {categories.map((category) => (
           <button
             key={category.id}
             onClick={() => handleCategoryChange(category.id)}
-            className={`px-6 py-3 rounded-full font-medium transition-all duration-200 cursor-pointer hover:scale-105 ${
+            className={`px-3 py-2 xs:px-4 xs:py-2 sm:px-6 sm:py-3 rounded-full font-medium text-sm xs:text-base transition-all duration-200 cursor-pointer hover:scale-105 ${
               activeCategory === category.id
                 ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg shadow-blue-500/25'
                 : 'bg-gray-800/60 text-gray-300 hover:text-white hover:bg-gray-700/80 backdrop-blur-sm border border-gray-600/50'
