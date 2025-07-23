@@ -77,7 +77,8 @@ cinespark/
 
 ## Déploiement
 
-L'application est déjà déployée sur le site suivant : **cinespark-sakab.vercel.app**
+L'application est déjà déployée sur [ce site](cinespark-sakab.vercel.app) pour que vous puissiez la tester par vous mêmes.
+N'hésitez pas à me rapporter des bugs !
 
 ## Installation et Démarrage
 
